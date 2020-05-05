@@ -1,0 +1,125 @@
+html{
+    background: rgba(114, 116, 114, 0.17);
+}
+body{
+    margin: 0;
+    padding:0;
+    width:100%;
+}
+/*--------text--------*/
+.content{
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+/*---------top left corner message/logo --------*/
+.logo{
+    position: fixed;
+    float: left;
+    margin: 5px 36px;
+    color: rgb(194, 205, 107);
+    font-family: Apple-Chancery;
+    font-weight: bold;
+    font-size: 35px;
+}
+/*----------- navigation bar on the top -------------*/
+nav{
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+}
+nav.black ul{
+    background: #000;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: .3s;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+nav ul li a:focus{
+    outline: none;
+}
+nav ul li a.active{
+    background: #E2472F;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+.menu-icon{
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.content p{
+    width: 900px;
+    margin: 30px auto;
+
+    text-align: justify;
+
+    font-size: 20px;
+    line-height: 30px;
+}
+.content h2{
+    width: 900px;
+    font-weight: bold;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 35px;
+    line-height: 30px;
+}
+/*---------------- responsive nav bar --------------*/
+@media (max-width: 600px){
+    .logo{
+        position: fixed;
+        top: 0;
+        margin-top: 5px;
+    }
+    nav ul{
+        max-height: 0px;
+        background: #000;
+    }
+    nav .black ul{
+        background: #000;
+    }
+    .showing{
+        max-height: 20em;
+    }
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(announcementscover.png) no-repeat;
+    background-size: cover;
+}

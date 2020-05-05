@@ -1,0 +1,36 @@
+body{
+
+    font-family: sans-serif;
+    color: #3c3939;
+    background: url(music.jpg);
+    background-size: cover;
+}
+.top{
+    width : 400px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+}
+.profile_photo{
+    position: relative;
+
+}
+.info{
+    color: #4b4fe2;
+    margin-right: 16px;
+}
+.main-body{
+    padding: 20px;
+
+}
+.stats_bar{
+    background-color: #bdc9ea;
+    border-radius: 16px;
+}
+.progress_bar{
+    padding: 0.1em 16px;
+    border-radius: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #4b4fe2;
+}

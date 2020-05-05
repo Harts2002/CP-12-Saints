@@ -1,0 +1,81 @@
+body {
+    background-color: #C0C0C0
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body header {
+    background-color: #800000;
+    font-family: Apple Chancery;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #CCCC00;
+}
+input[type = text]{
+    width:60%;
+    border: 3px solid #aaa;
+    border-radius: 5px;
+    margin: 8px 0;
+    outline: none;
+    padding: 7px;
+    box-sizing: border-box;
+    transition: .3s
+}
+#reg_btn{
+    height: 20px;
+    width: 10%;
+    margin: 3px;
+    color: white;
+    background: #3B5998;
+    border: none;
+    border-radius: 5px;
+}
+input[type=text]:focus{
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+nav {
+    float: left;
+    font-size: 27px;
+    width: 30%;
+    background: #FF6347;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: "gray";
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #800000;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}

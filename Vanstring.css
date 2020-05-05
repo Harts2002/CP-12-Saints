@@ -1,0 +1,136 @@
+html{
+    background: rgba(114, 116, 114, 0.17);
+}
+body{
+    margin: 0;
+    padding:0;
+    width:100%;
+}
+/*--------text--------*/
+.content{
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+/*---------top left corner message/logo --------*/
+.logo{
+    position: fixed;
+    float: left;
+    margin: -10px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+/*---------------- navigation bar at the top ---------------*/
+nav{
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+}
+nav.black ul{
+    background: #000;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: .3s;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+nav ul li a:focus{
+    outline: none;
+}
+nav ul li a.active{
+    background: #E2472F;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+.menu-icon{
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.content p{
+    width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+.content input[type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.content input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+/*---------------- responsive nav bar --------------*/
+@media (max-width: 600px){
+    .logo{
+        position: fixed;
+        top: 0;
+        margin-top: 5px;
+    }
+    nav ul{
+        max-height: 0px;
+        background: #000;
+    }
+    nav .black ul{
+        background: #000;
+    }
+    .showing{
+        max-height: 20em;
+    }
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(Coverphoto.jpeg) no-repeat 95% 5%;
+    background-size: cover;
+}
+.error{
+    font-size: 25px;
+    font-family: Apple Chancery;
+    border: 2px solid rgb(162, 28, 168);
+    color: rgb(22, 68, 31);
+}
